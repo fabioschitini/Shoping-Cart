@@ -1,13 +1,14 @@
 import {BrowserRouter as Router,Switch,Route,Link,withRouter} from 'react-router-dom'
 
 
-const Nav = () => {
+const Nav = (props) => {
+    const {count}=props
     return (
         <nav>
             <ul>
              <Link to="/"> <li>Homepage</li></Link>
                <Link to="/shop"><li>Shop</li></Link>
-               <Link to="/cart"><li>Cart-StateNumberOfItems</li></Link>
+                <Link to="/cart"><li>Cart {count }</li></Link>
             </ul>
         </nav>
     )
