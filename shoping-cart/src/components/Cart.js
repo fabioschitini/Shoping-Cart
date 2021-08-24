@@ -7,6 +7,7 @@ const Cart = (props) => {
        let totalArray= items.map(item => {
             return item.value
        })
+       
         setTotal(totalArray.reduce((a,b)=>a+b,0))
     })
 
@@ -14,7 +15,7 @@ const Cart = (props) => {
     const { items } = props
     const {remove}=props
     
-    if (!items) {
+    if (total===0) {
 
         return null
     }
@@ -22,7 +23,7 @@ const Cart = (props) => {
         return <div>
             {items.map(item => {
                 return (
-                    <div key={item.id} id={item.id}>
+                    <div className='products' key={item.id} id={item.id}>
                         <figure>
                             <img src={item.img} alt='missing' />
                             <figcaption>{item.caption}</figcaption>
@@ -40,7 +41,9 @@ const Cart = (props) => {
     
                 )
             })}
-            <h1>Total ${total}</h1>
+
+                <h1>Total ${total}</h1>
+
              </div>
                 
 }

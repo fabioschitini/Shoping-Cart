@@ -8,7 +8,8 @@ const Nav = (props) => {
             <ul>
              <Link to="/"> <li>Homepage</li></Link>
                <Link to="/shop"><li>Shop</li></Link>
-                <Link to="/cart"><li>Cart {count }</li></Link>
+                <Link to="/cart"><li id='count'>    <i className='fa fa-shopping-cart'></i>
+ {count }</li></Link>
             </ul>
         </nav>
     )

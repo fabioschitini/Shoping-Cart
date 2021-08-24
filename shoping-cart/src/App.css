@@ -20,3 +20,74 @@ h1 {
   text-align: center;
   font-size: 50px;
 }
+i {
+  position: relative;
+  right: 10px;
+}
+.fa-arrow-down:before {
+  content: "\f063";
+  position: absolute;
+  left: 14px;
+  top: -4px;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+.fa-arrow-up:before {
+  content: "\f062";
+  position: absolute;
+  top: -26px;
+  left: 14px;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+.products {
+  text-align: center;
+  background-color: #1b3050;
+}
+input {
+  background-color: #1b3050;
+
+  border-color: white;
+  border-width: inherit;
+  text-align: center;
+  font-size: 25px;
+  color: white;
+  margin: 10px;
+  border-radius: 20px;
+}
+button {
+  background-color: black;
+  border-color: white;
+  border-width: inherit;
+  text-align: center;
+  font-size: 25px;
+  color: white;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+figcaption {
+  font-size: 35px;
+  color: white;
+  margin: 10px;
+}
+label {
+  font-size: 20px;
+  color: white;
+}
+p {
+  font-size: 30px;
+  color: white;
+}
+img {
+  margin: 50px;
+}
+#count {
+  color: #e46e42;
+}
+.fa-shopping-cart:before {
+  content: "\f07a";
+  color: white;
+}

@@ -10,6 +10,9 @@ function App() {
      const [count, setCount] = useState('')
     const [items,setItems]=useState([])
   const submit = (e) => {
+    if (e.target.parentNode.children[1].children[1].value < 1) {
+      return
+    }
           let value= Number(e.target.parentNode.children[0].children[2].innerText.replace(/[^0-9.-]+/g,"")) 
     if (items.length === 0) {
       setItems(items.concat({
@@ -57,6 +60,7 @@ function App() {
         setItems(yep)
       }
     }  
+    e.target.parentNode.children[1].children[1].value=1
   }
   const remove=(e) => {
     setItems(items.filter(item => item.id !== e.target.parentNode.id))
@@ -79,20 +83,17 @@ function App() {
        
         else e.target.parentNode.children[1].value=e.target.parentNode.children[1].value+1
     }
-    function decrement(e) {
-         if (parseFloat(e.target.parentNode.children[1].value)) {
-                    e.target.parentNode.children[1].value=parseFloat(e.target.parentNode.children[1].value)-1
-
-         }
-         else if (parseFloat(e.target.parentNode.children[1].value) === 1) {
+  function decrement(e) {
+      console.log(typeof parseFloat(e.target.parentNode.children[1].value))
+         
+          if (parseFloat(e.target.parentNode.children[1].value) === 1) {
              console.log('decreasing')
-              e.target.parentNode.children[1].value=''
+              
         }
         else e.target.parentNode.children[1].value=e.target.parentNode.children[1].value-1
     }
   return (
     <div className="App">
-    <i className='fa fa-shopping-cart'></i>
       <Router>
         <Nav count={count }/>
         <Switch>
