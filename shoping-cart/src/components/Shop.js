@@ -1,5 +1,5 @@
 import { useState, useEfect } from 'react'
-
+import Button from './Button.style'
 const Shop = (props) => {
  const {submit}=props
     const { increment } = props
@@ -17,8 +17,8 @@ const Shop = (props) => {
             <input  defaultValue={1} id='cellPhone'></input>
             <i className="fas fa-arrow-up" onClick={increment}></i>
              <i className="fas fa-arrow-down" onClick={decrement}></i>
-        </div>
-            <button onClick={submit}>Submit</button>
+            </div>
+           <Button onClick={submit} >Submit</Button> 
         </div>
 
         <div id='Bike' className='products'>

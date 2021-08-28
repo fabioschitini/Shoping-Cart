@@ -5,6 +5,9 @@ nav {
   align-items: center;
   min-height: 80px;
 }
+.App {
+  background-color: #1b3050;
+}
 ul {
   display: flex;
   justify-content: space-around;
