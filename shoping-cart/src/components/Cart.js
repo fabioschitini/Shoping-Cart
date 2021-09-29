@@ -1,7 +1,8 @@
-import { BrowserRouter as Router, Switch, Route, Link, withRouter } from 'react-router-dom'
-import { useState, useEfect, useEffect } from 'react'
+import { useState,  useEffect } from 'react'
 
 const Cart = (props) => {
+    const { items } = props
+    const {remove}=props
     const [total, setTotal] = useState(0)
     useEffect(() => {
        let totalArray= items.map(item => {
@@ -9,11 +10,10 @@ const Cart = (props) => {
        })
        
         setTotal(totalArray.reduce((a,b)=>a+b,0))
-    })
+    },[])
 
-    const [ex,setEx]=useState(0)
-    const { items } = props
-    const {remove}=props
+    
+    
     
     if (total===0) {
 
@@ -29,9 +29,8 @@ const Cart = (props) => {
                             <figcaption>{item.caption}</figcaption>
                         </figure>
                         <div>
-                            <Link key={item.id} to={`/shop/${item.id}`
-                            }>
-                                <p >Amount:{item.amount}</p></Link>
+                           
+                                <p >Amount:{item.amount}</p>
                             <p>${item.value}</p>
                      
                         </div>

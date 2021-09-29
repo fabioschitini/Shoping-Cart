@@ -1,6 +1,6 @@
 import './App.css';
-import {BrowserRouter as Router,Switch,Route,Link} from 'react-router-dom'
-import { useState, useEfect } from 'react'
+import {BrowserRouter as Router,Switch,Route} from 'react-router-dom'
+import { useState} from 'react'
 import Nav from './components/Nav'
 import Home from './components/Home'
 import Cart from './components/Cart'
@@ -13,6 +13,7 @@ function App() {
     if (e.target.parentNode.children[1].children[1].value < 1) {
       return
     }
+          console.log(e.target.parentNode.children[0])
           let value= Number(e.target.parentNode.children[0].children[2].innerText.replace(/[^0-9.-]+/g,"")) 
     if (items.length === 0) {
       setItems(items.concat({

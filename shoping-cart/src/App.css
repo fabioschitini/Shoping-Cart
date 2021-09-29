@@ -19,6 +19,10 @@ li {
   color: white;
   list-style: none;
 }
+li:hover {
+  color: red;
+  box-shadow: orangered;
+}
 h1 {
   text-align: center;
   font-size: 50px;
@@ -61,7 +65,7 @@ input {
   border-radius: 20px;
 }
 button {
-  background-color: black;
+  background-color: #1b3050;
   border-color: white;
   border-width: inherit;
   text-align: center;
@@ -70,6 +74,10 @@ button {
   margin: 10px;
   cursor: pointer;
   border-radius: 20px;
+}
+button:hover {
+  color: red;
+  box-shadow: orangered;
 }
 figcaption {
   font-size: 35px;
@@ -92,5 +100,19 @@ img {
 }
 .fa-shopping-cart:before {
   content: "\f07a";
+  color: white;
+}
+
+#Home-p {
+  font-size: 30px;
+  color: white;
+  width: 80%;
+  margin: none;
+  margin-left: 14%;
+}
+#container-home {
+  height: 550px;
+}
+#h1-home {
   color: white;
 }

@@ -1,4 +1,3 @@
-import { useState, useEfect } from 'react'
 import Button from './Button.style'
 const Shop = (props) => {
  const {submit}=props
