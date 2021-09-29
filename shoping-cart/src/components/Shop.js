@@ -17,7 +17,7 @@ const Shop = (props) => {
             <i className="fas fa-arrow-up" onClick={increment}></i>
              <i className="fas fa-arrow-down" onClick={decrement}></i>
             </div>
-           <Button onClick={submit} >Submit</Button> 
+           <button onClick={submit} >Submit</button> 
         </div>
 
         <div id='Bike' className='products'>
