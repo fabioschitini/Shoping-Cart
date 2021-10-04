@@ -4,7 +4,7 @@ https://www.theodinproject.com/paths/full-stack-javascript/courses/javascript/le
 
 ## Feature
 * Add and remove products from the shopping cart
-* A sho page and a Cart page
+* A shop page and a Cart page
 
 link Live preview:https://fabioschitini.github.io/Memory-Card/
 
