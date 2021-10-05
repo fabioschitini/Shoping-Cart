@@ -1,4 +1,3 @@
-import Button from './Button.style'
 const Shop = (props) => {
  const {submit}=props
     const { increment } = props
