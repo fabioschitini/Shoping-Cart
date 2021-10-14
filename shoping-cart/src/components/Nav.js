@@ -6,7 +6,7 @@ const Nav = (props) => {
     return (
         <nav>
             <ul>
-             <Link to="/"> <li>Homepage</li></Link>
+             <Link to="/Shoping-Cart/"> <li>Homepage</li></Link>
                <Link to="/shop"><li>Shop</li></Link>
                 <Link to="/cart"><li id='count'>    <i className='fa fa-shopping-cart'></i>
  {count }</li></Link>

@@ -108,9 +108,11 @@ img {
   color: white;
   width: 60%;
   margin-left: 379px;
+  text-align: center;
+
 }
 #container-home {
-  height: 550px;
+  height: 654px;
 }
 #h1-home {
   color: white;

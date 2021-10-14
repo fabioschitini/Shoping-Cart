@@ -99,7 +99,7 @@ function App() {
       <Router>
         <Nav count={count }/>
         <Switch>
-          <Route exact path='/Shoping-Cart' component={Home} />
+          <Route exact path='/Shoping-Cart/' component={Home} />
           <Route exact path='/shop'><Shop submit={submit} increment={increment} decrement={decrement }/></Route>
           <Route path='/cart'><Cart remove={remove} items={items}  /></Route>
           <Route path='/shop/:id' render={(props) => <Item items={items } submit={submit} increment={increment} decrement={decrement } {...props} />} />
